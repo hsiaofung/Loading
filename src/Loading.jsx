@@ -3,14 +3,17 @@ import LoadingImg from "./img/loader.gif";
 import "./css/loading.css";
 
 export default props => {
-  const { type } = props;
+  const { show, type } = props;
   return (
-    <div
-      className={
-        type === "fullPage" ? "loading-content-full-page" : "loading-content"
-      }
-    >
-      <div className={"loading-center"}></div>
-    </div>
+    (show && (
+      <div
+        className={
+          type === "fullPage" ? "loading-content-full-page" : "loading-content"
+        }
+      >
+        <div className={"loading-center"}></div>
+      </div>
+    )) ||
+    null
   );
 };
