@@ -6,7 +6,15 @@ import Loading from "./Loading";
 function App() {
   return (
     <div className="App">
-      <Loading />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illum,
+      molestiae magni vel rerum, eveniet, explicabo numquam officiis aut maxime
+      veniam blanditiis vitae porro iusto ea quibusdam! Reiciendis, sit quis?
+      <div className="box">
+        <Loading type="fullPage" />
+      </div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi beatae
+      reprehenderit voluptates iusto ut eum maxime nihil vel, rerum culpa, quae
+      delectus quasi voluptatem! Id blanditiis laudantium sequi obcaecati eum.
     </div>
   );
 }

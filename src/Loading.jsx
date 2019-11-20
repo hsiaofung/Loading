@@ -1,9 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
+import LoadingImg from "./img/loader.gif";
+import "./css/loading.css";
 
-export class Loading extends Component {
-  render() {
-    return <div>Loading</div>;
-  }
-}
-
-export default Loading;
+export default props => {
+  const { type } = props;
+  return (
+    <div
+      className={
+        type === "fullPage" ? "loading-content-full-page" : "loading-content"
+      }
+    >
+      <div className={"loading-center"}></div>
+    </div>
+  );
+};

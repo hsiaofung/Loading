@@ -1,0 +1,36 @@
+.loading-content-full-page {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0.8;
+  /*垂直置中*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-content {
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.8;
+  /*垂直置中*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-center {
+  width: 30px;
+  height: 30px;
+  background: url("../img/loader.gif") no-repeat center;
+}
+
+@media screen and (max-width: 767px) {
+  .loading-content .loading-center {
+    background-size: 15px 15px;
+  }
+}
