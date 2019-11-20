@@ -1,5 +1,4 @@
 import React from "react";
-import LoadingImg from "./img/loader.gif";
 import "./css/loading.css";
 
 export default props => {
