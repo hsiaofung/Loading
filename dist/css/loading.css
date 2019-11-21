@@ -30,7 +30,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .loading-content .loading-center {
+  .loading-center {
     background-size: 15px 15px;
   }
 }
